@@ -8,5 +8,5 @@ variable "sigsci_email" {
 
 variable "sigsci_corp" {
     type = string
-    default = "ricky_austin"
+    default = "your_corp_name"
 }
