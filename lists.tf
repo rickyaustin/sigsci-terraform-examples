@@ -1,5 +1,5 @@
 resource "sigsci_site_list" "ofac" {
-  site_short_name = "gcp_lab"
+  site_short_name = var.sigsci_site
   name            = "OFAC Countries"
   type            = "country"
   description     = "Countries in the OFAC List"
@@ -20,7 +20,7 @@ resource "sigsci_site_list" "ofac" {
 }
 
 resource "sigsci_site_list" "bad-user-agents" {
-  site_short_name = "gcp_lab"
+  site_short_name = var.sigsci_site
   name            = "Bad User Agents"
   type            = "wildcard"
   description     = "Anomalous User Agents"
