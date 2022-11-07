@@ -6,7 +6,7 @@ variable "sigsci_email" {
     type = string
 }
 
-variable "sigsci_corp" {
+variable "sigsci_site" {
     type = string
-    default = "your_corp_name"
+    default = "your_site_name"
 }
