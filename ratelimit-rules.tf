@@ -1,5 +1,5 @@
-resource "sigsci_site_rule" "Bot_Challenge_Login" {
-  site_short_name = "gcp_lab"
+/*resource "sigsci_site_rule" "Bot_Challenge_Login" {
+  site_short_name = var.sigsci_site
   type            = "rateLimit"
   group_operator  = "all"
   enabled         = true
@@ -49,10 +49,10 @@ resource "sigsci_site_rule" "Bot_Challenge_Login" {
     signal        = "site.loginpwdreset"
     type          = "blockSignal"
   }
-}
+} */
 
 resource "sigsci_site_rule" "rate-limit-foreign-domains" {
-  site_short_name = "gcp_lab"
+  site_short_name = var.sigsci_site
   type            = "rateLimit"
   group_operator  = "all"
   enabled         = true
@@ -92,7 +92,7 @@ resource "sigsci_site_rule" "rate-limit-foreign-domains" {
 }
 
 resource "sigsci_site_rule" "suspected-attacker" {
-  site_short_name = "gcp_lab"
+  site_short_name = var.sigsci_site
   type            = "rateLimit"
   group_operator  = "all"
   enabled         = true
