@@ -1,5 +1,5 @@
 resource "sigsci_site_rule" "invalid-host-header" {
-  site_short_name = "gcp_lab"
+  site_short_name = var.sigsci_site
   type            = "request"
   group_operator  = "any"
   enabled         = true
@@ -31,7 +31,7 @@ resource "sigsci_site_rule" "invalid-host-header" {
 }
 
 resource "sigsci_site_rule" "bad-agent" {
-  site_short_name = "gcp_lab"
+  site_short_name = var.sigsci_site
   type            = "request"
   group_operator  = "all"
   enabled         = true
@@ -57,7 +57,7 @@ resource "sigsci_site_rule" "bad-agent" {
 }
 
 resource "sigsci_site_rule" "ofac" {
-  site_short_name = "gcp_lab"
+  site_short_name = var.sigsci_site
   type            = "request"
   group_operator  = "all"
   enabled         = true
