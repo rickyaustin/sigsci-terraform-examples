@@ -1,6 +1,6 @@
 # Terraform Examples - Signal Sciences Provider
 
-You will find a variety of terraform configurations which you can use as is or for reference. 
+You will find a variety of terraform configurations which you can use "as-is" or as a reference. 
 There is a sample resource for just about every type in this repository.
 
 I've taken the examples from this blog post: 
