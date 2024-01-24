@@ -1,12 +1,12 @@
-variable "sigsci_token" {
+variable "NGWAF_TOKEN" {
     type = string
 }
 
-variable "sigsci_email" {
+variable "NGWAF_EMAIL" {
     type = string
 }
 
-variable "sigsci_site" {
+variable "NGWAF_SITE" {
     type = string
     default = "your_site_name"
 }
